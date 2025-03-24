@@ -1,0 +1,24 @@
+inherits = "bogster"
+
+"ui.bufferline.active" = {bg = "bogster-base4" , modifiers = ["underlined"]}
+
+[palette]
+bogster-yellow = "#dcb659"
+bogster-lblue = "#59dcd8"
+bogster-teal = "#59dcb7"
+bogster-blue = "#36b2d4"
+bogster-orange = "#dc7759"
+bogster-red = "#d32c5d"
+bogster-lgreen = "#7fdc59"
+bogster-lred = "#dc597f"
+bogster-purp = "#b759dc"
+
+bogster-base0 = "#13181e"
+bogster-base1 = "#161c23" 
+bogster-base2 = "#232d38"
+bogster-base3 = "#313f4e" 
+bogster-base4 = "#415367" 
+bogster-base5 = "#abb2bf"
+
+bogster-fg0 = "#c6b8ad"
+bogster-fg1 = "#e5ded6"

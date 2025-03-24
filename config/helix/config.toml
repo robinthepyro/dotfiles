@@ -1,0 +1,65 @@
+theme="kanagawa"
+
+[editor]
+mouse=false
+line-number = "relative"
+cursorline=true
+auto-completion=true
+gutters = ["spacer","line-numbers","spacer","diff"]
+auto-format=true
+completion-timeout=200
+indent-heuristic="tree-sitter"
+bufferline="multiple"
+
+[editor.statusline]
+left = ["spinner", "file-name", "version-control"]
+right = ["selections","register","position"]
+
+[editor.whitespace.render]
+tab="all"
+
+[editor.indent-guides]
+render=true
+ 
+[editor.soft-wrap]
+enable=true
+
+[keys.normal]
+A-c = "change_selection"
+c = "change_selection_noyank"
+
+"A-k"="goto_previous_buffer"
+"A-j"="goto_next_buffer"
+"A-q"=":buffer-close"
+"A-/"="repeat_last_motion"
+"A-x"="extend_to_line_bounds"
+"X"=["extend_line_up", "extend_to_line_bounds"]
+
+[keys.select]
+c = "change_selection"
+A-c = "change_selection_noyank"
+
+"A-x"="extend_to_line_bounds"
+"X"=["extend_line_up", "extend_to_line_bounds"]
+
+[keys.insert]
+ C-space = "signature_help" 
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+enable                             = true # master switch for lsp
+display-messages                   = true
+display-signature-help-docs        = true
+auto-signature-help                = true
+snippets                           = true
+goto-reference-include-declaration = true
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
