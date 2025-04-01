@@ -8,7 +8,7 @@
 <ul>
   <li>Hyprland - the best looking window manager out there, and it is very very configurable.</li>
   <li>waybar - specifically I am using waybar-cava (available in the AUR). Displays system info, a clock, and a simple audio visualiser thanks to Cava</li>
-  <li>tofi - alternative app launcher. Designed to be very very fast, however currently I believe I cannot get it to launch terminal apps</li>
+  <li>tofi - minimal app launcher. Designed to be very very fast, however currently I would reccomend rofi or wofi as less buggy alternatives.</li>
   <li>Kitty - it's just better than every other terminal...</li>
   <li>zsh - because it's better than bash</li>
   <li>helix - a really nice modal text editor (i live in this thing). Don't be like me tho, just use neovim</li>
@@ -17,7 +17,7 @@
   <li>hyprpaper / hyprswitcher / hyprlock / hypridle - they just work too well to not use.</li>
 </ul>
 
-<h2>Some other useful things I cannot live without</h2>
+<h2>Some other useful? things I cannot live without</h2>
 <ul>
   <li>render3d and a really ugly script to get an spinning blahaj on your terminal. Just change the ugly hardcoded path to whereever you want to keep your .obj file for the blahaj. You can install render3d with cargo install render3d</li>
   <li>zoxide because typing the full path to cd somewhere is cringe <3</li>
