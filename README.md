@@ -17,9 +17,6 @@
   <li>hyprpaper / hyprswitcher / hyprlock / hypridle - they just work too well to not use.</li>
 </ul>
 
-<h2>Some other useful? things I cannot live without</h2>
-<ul>
-  <li>render3d and a really ugly script to get an spinning blahaj on your terminal. Just change the ugly hardcoded path to whereever you want to keep your .obj file for the blahaj. You can install render3d with cargo install render3d</li>
-  <li>zoxide because typing the full path to cd somewhere is cringe <3</li>
-  <li>keyd to rebind keys around and set up key overloading (having a key function as a different button when released or held)</li>    
-</ul>
+<p>theres probably some other stuff in here but it's all ugly jank, so don't look too close.</p>
+
+<p>Anyways, for that one girl who was asking for these, you're welcome. Everyone else go home I guess.</p>
