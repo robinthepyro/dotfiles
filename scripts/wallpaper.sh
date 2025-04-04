@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Check if a file argument was provided
 if [ -z "$1" ]; then
