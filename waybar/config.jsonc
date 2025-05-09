@@ -1,0 +1,154 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 34, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces",
+                     // "sway/scratchpad",
+                     // "sway/workspaces",
+                     // "river/tags",
+                    "mpris",
+                    "cava",
+    ],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network",
+        "idle_inhibitor",
+        "tray",
+        "battery"
+    ],
+
+     // modules configuration
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "disable-scroll": true,
+        "on-click": "activate",
+        "show-special":true,
+        "sort-by":"id",
+        "format-icons":{
+            "magic": "󱕅"
+        }
+    },
+    "mpris": {
+        "max-length": 45,
+        "format": "{status_icon} {title} - <i>{artist}</i>",
+        "tooltip-format":"{title} - {album} - {artist}",
+        // "on-click": "notify-send boop",
+        // "on-click-middle": "notify-send boop",
+        // "on-click-right": "notify-send boop",
+        "status-icons":{
+            "paused":"",
+            "playing":""
+        }
+    },
+    "cava": {
+        "framerate": 60,
+        // "sensitivity": 70,
+        "autosens": 1,
+        "bars": 16,
+        "lower_cutoff_freq": 40,
+        "higher_cutoff_freq": 12000,
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.35,
+        "hide_on_silence": true,
+        "input_delay": 1,
+        "format-icons" : [" ", "▁", "▂", "▃","▃", "▄", "▅", "▆", "▇","█",],
+        "actions": {
+        "on-click-right": "mode"
+        },
+    },
+    "network": {
+        "interval":2,
+        "format": "{icon}",
+        "format-disconnected": "󱐅",
+        "tooltip": true,
+        "tooltip-format": "{essid}: {ipaddr}/{cidr}",
+        "on-click":"exec kitty nmtui-uncolor.sh",
+        "format-icons":["󰤯","󰤟","󰤢","󰤥","󰤨"]
+    },
+    "clock": {
+        "interval": 15,
+        "format": "  {:%R %p | %a %e %b}",
+        "tooltip": false,
+        // "max-length": 24,
+        "on-click":"exec kitty calcurse_helix.sh"
+        // "on-click":"exec tofi-drun --drun-launch=true"
+    },
+    "battery": {
+        "interval": 5,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰚥 {capacity}%",
+        "format-plugged": "󰚦 {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎",
+                         "󰁺",
+                         "󰁻",
+                         "󰁼",
+                         "󰁽",
+                         "󰁾",
+                         "󰁿",
+                         "󰂀",
+                         "󰂁",
+                         "󰂂",
+                         "󰁹"],
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "justify": "centre",
+        "format-muted": "{volume}% ",
+        "reverse-scrolling":true,
+        "format-icons": {
+            "default": ["", "", "", "", ""]
+        },
+        "on-click": "amixer set Master toggle"
+    },
+    "tray": {
+        "expand":true,
+        "spacing": 10
+    },
+     "cpu": {
+            "format": "{usage}% ",
+            "justify": "centre",
+            "interval": 5,
+            "on-click":"exec kitty btop",
+            "states": {
+                "critical": 90
+            }
+        },
+    "memory": {
+        "interval": 5,
+        "format": "{percentage}% ",
+        "justify": "centre",
+        "min-length":6,
+        "max-length":6,
+        "on-click":"exec kitty btop"
+    },
+    "idle_inhibitor": {
+        "justify": "center",
+        "format":"{icon}",
+        "format-icons":{
+            "activated": "󰅶",
+            "deactivated": "󰾫"
+        },
+        "start-activated":false,
+        "timeout":150,
+        "tooltip-format-activated":"idle inhibitor actived",
+        "tooltip-format-deactivated":"idle inhibitor deactived",
+    },
+}

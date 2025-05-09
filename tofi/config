@@ -1,0 +1,35 @@
+#Styling
+font = "/usr/share/fonts/TTF/DejaVuSansMono.ttf"
+hint-font=false
+font-size = 16
+
+text-color = #FFFFFFEE
+
+prompt-text = ""
+placeholder-text = "run: "
+placeholder-color=#fff8
+anchor=top
+margin-top=3%
+
+corner-radius = 10
+width = 50%
+height = 5%
+horizontal = true
+outline-width = 0
+padding-left = 5
+padding-top = 9
+min-input-width = 200
+result-spacing = 30
+selection-color = #ffff
+default-result-color = #666666FF
+background-color = #111022
+border-width = 2
+border-color = #cccccc
+
+#Behaviour
+drun-launch = true
+ascii-input = true
+text-cursor = true
+require-match = false
+
+

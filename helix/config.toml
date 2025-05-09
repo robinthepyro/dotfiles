@@ -1,0 +1,111 @@
+theme="rbn"
+
+[editor]
+text-width = 96  # retro vibes.
+# end-of-line-diagnostics = "hint"
+mouse=true
+scrolloff = 16
+line-number = "relative"
+cursorline = true
+auto-completion = true
+gutters = ["spacer","line-numbers","spacer","diff"]
+auto-format = true
+completion-timeout = 50
+completion-replace = true
+color-modes = true
+indent-heuristic = "hybrid"
+jump-label-alphabet = "fjghdkslavnrutybiecowpqxmz"
+bufferline = "always"
+
+[editor.statusline]
+left = ["spinner", "file-name", "version-control"]
+right = ["register","selections","position","mode"]
+
+[editor.whitespace.render]
+tab = "all"
+
+[editor.indent-guides]
+render = true
+# character = "┆"
+character = "."
+
+[editor.soft-wrap]
+enable = true
+max-indent-retain = 20
+max-wrap = 16
+wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[editor.smart-tab]
+enable = true
+supercede-menu = true
+
+[keys.normal]
+C-r = ":format"
+C-m = "save_selection"
+S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+
+S-tab = "move_parent_node_start"
+tab = "move_parent_node_end"
+
+A-c = "change_selection_noyank"
+A-d = "delete_selection_noyank"
+
+"C-A-l" = "jump_view_right"
+"C-A-j" = "jump_view_down"
+"C-A-k" = "jump_view_up"
+"C-A-h" = "jump_view_left"
+
+"A-k" = "goto_previous_buffer"
+"A-j" = "goto_next_buffer"
+"A-q" = ":buffer-close"
+
+"A-/" = "repeat_last_motion"
+
+"A-x" = "extend_to_line_bounds"
+"X" = ["extend_line_up", "extend_to_line_bounds"]
+
+J = "goto_next_paragraph"
+K = "goto_prev_paragraph"
+H = ["insert_at_line_start", "normal_mode"] #avoids the annoying goto_line_start ignoring indent
+L = "goto_line_end"
+
+[keys.select]
+H = "goto_line_start" 
+J = "goto_next_paragraph"
+K = "goto_prev_paragraph"
+L = "goto_line_end"
+c = "change_selection"
+A-c = "change_selection_noyank"
+
+"A-x" = "extend_to_line_bounds"
+"X" = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.insert]
+C-space = "signature_help" 
+S-tab = "move_parent_node_start"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+enable = true # master switch for lsp
+display-messages = true
+display-signature-help-docs = true
+auto-signature-help = true
+# display-progress-messages = true
+snippets = true
+goto-reference-include-declaration = true
+
+[editor.auto-pairs]
+# need to update these to be language specific
+# but idk how to do that yet
+'(' = ')'
+'{' = '}'
+'<' = '>'
+'"' = '"'
+'[' = ']'
+'`' = '`'

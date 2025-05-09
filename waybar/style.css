@@ -1,0 +1,110 @@
+@define-color base00 #330F19;
+@define-color base01 #330F19;
+@define-color base02 #330F19;
+@define-color workspace_active_bg #491524;
+@define-color text01 #ffffff;
+@define-color workspace_urgent_bg #881111;
+/* accent colour */
+@define-color accent-color #F1840A;
+* {
+  transition: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: "Hack Nerd Font Mono";
+}
+
+#waybar {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: @text01;
+}
+
+#workspaces {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+#workspaces button {
+  margin: 0px 0px;
+  padding: 4px 8px;
+  color: @text01;
+}
+
+#workspaces button.focused {
+  border-radius: 1px;
+  border-bottom: 1px solid #ffffff;
+  margin: 0px 0px;
+  padding: 4px 8px;
+}
+#workspaces button.active {
+  border-radius: 1px;
+  border-bottom: 1px solid #ffffff;
+  margin: 0px 0px;
+  padding: 4px 8px;
+}
+
+#tray,
+#memory,
+#mode,
+#battery,
+#cpu,
+#network,
+#pulseaudio,
+#idle_inhibitor,
+#backlight,
+#custom-storage,
+#custom-updates,
+#custom-mail,
+#temperature {
+  margin: 4px 0px;
+  padding: 0 20px;
+  font-family: "Hack Nerd Font";
+}
+
+#clock {
+  margin: 4px 10px;
+  padding: 0 10px;
+}
+
+#pulseaudio.muted {
+  color: @base0F;
+}
+
+#pulseaudio.bluetooth {
+  color: @base0C;
+}
+
+#clock {
+  margin-left: 0px;
+  margin-right: 4px;
+  background-color: transparent;
+}
+
+#temperature.critical {
+  color: @base0F;
+}
+
+#window {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+#language {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+#mpris {
+  padding: 0 0px;
+  margin-left: 20px;
+}
+#cava {
+  margin-right: 20px;
+  padding-bottom: 8px;
+  margin-left: 10px;
+}
+
+window#waybar {
+  background: transparent;
+}

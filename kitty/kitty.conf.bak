@@ -1,0 +1,35 @@
+background_opacity 1
+enable_audio_bell no
+
+# to allow some helix bind funkiness
+map ctrl+Shift+H no_op
+
+map ctrl+tab
+map ctrl+shift+tab
+
+map ctrl+alt+tab next_tab
+map ctrl+alt+shift+tab previous_tab
+
+
+# tab_bar_min_tabs            1
+# tab_bar_edge                bottom
+# tab_bar_style               powerline
+# tab_powerline_style         slanted
+# tab_title_template          {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
+
+cursor_trail 5
+cursor_trail_start_threshold 0
+
+
+# BEGIN_KITTY_THEME
+# Tokyo Night
+include current-theme.conf
+# END_KITTY_THEME
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="Fira Code"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
