@@ -52,9 +52,12 @@ Terminal  Multiplexer
 
 Battery Monitor
 ```batsignal```
+
+Terminal Navigation Help (it's cd but better)
+```zoxide```
  
 I know future me will appreciate it here's the command to install them all with paru.
-```paru -S hyprland hyprpaper hyprlock hyprswitch hypridle tofi waybar-cava yazi thunar keyd dunst rio zellij batsignal gitu gitui helix```
+```paru -S hyprland hyprpaper hyprlock hyprswitch hypridle tofi waybar-cava yazi thunar keyd dunst rio zellij batsignal gitu gitui helix zoxide```
 
 
 # USE THESE AT YOUR OWN RISK!

@@ -42,6 +42,8 @@ cursor-line = "warning" # show warnings and errors on the cursorline inline
 enable = true
 supercede-menu = true
 
+[keys.normal.space]
+# u = ":sh ~/.scripts/upload_to_webdev.sh"
 [keys.normal]
 C-r = ":format"
 C-m = "save_selection"

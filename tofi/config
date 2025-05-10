@@ -1,30 +1,30 @@
 #Styling
-font = "/usr/share/fonts/TTF/DejaVuSansMono.ttf"
+font = "/usr/share/fonts/TTF/HackNerdFontMonoFCLigatured-Regular.ttf"
 hint-font=false
 font-size = 16
 
-text-color = #FFFFFFEE
+placeholder-color=#000f
+text-color = #000000EE
+default-result-color = #0006
+background-color = #ffff
+border-color = #000f
+selection-color = #000f
 
 prompt-text = ""
 placeholder-text = "run: "
-placeholder-color=#fff8
 anchor=top
-margin-top=3%
+margin-top=28%
 
-corner-radius = 10
+corner-radius = 4
 width = 50%
-height = 5%
+height = 50
 horizontal = true
 outline-width = 0
-padding-left = 5
-padding-top = 9
+padding-left = 15
+padding-top = 12
 min-input-width = 200
 result-spacing = 30
-selection-color = #ffff
-default-result-color = #666666FF
-background-color = #111022
 border-width = 2
-border-color = #cccccc
 
 #Behaviour
 drun-launch = true
