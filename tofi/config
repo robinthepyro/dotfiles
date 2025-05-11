@@ -6,24 +6,27 @@ font-size = 16
 placeholder-color=#000f
 text-color = #000000EE
 default-result-color = #0006
-background-color = #ffff
-border-color = #000f
+background-color = #fff9
 selection-color = #000f
 
 prompt-text = ""
 placeholder-text = "run: "
-anchor=top
-margin-top=28%
 
-corner-radius = 4
-width = 50%
-height = 50
+margin-top=15%
+anchor=top
+
+width = 47%
+height = 57
+
+corner-radius = 15
 horizontal = true
 outline-width = 0
 padding-left = 15
 padding-top = 12
 min-input-width = 200
 result-spacing = 30
+
+border-color = #0000
 border-width = 2
 
 #Behaviour
