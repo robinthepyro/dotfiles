@@ -3,16 +3,16 @@ font = "/usr/share/fonts/TTF/HackNerdFontMonoFCLigatured-Regular.ttf"
 hint-font=false
 font-size = 16
 
-placeholder-color=#000f
-text-color = #000000EE
-default-result-color = #0006
-background-color = #fff9
-selection-color = #000f
+placeholder-color=#777f
+text-color = #777f
+default-result-color = #777f
+background-color = #0000
+selection-color = #ffff
 
 prompt-text = ""
 placeholder-text = "run: "
 
-margin-top=15%
+margin-top=17%
 anchor=top
 
 width = 47%
@@ -26,8 +26,8 @@ padding-top = 12
 min-input-width = 200
 result-spacing = 30
 
-border-color = #0000
-border-width = 2
+border-color = #ffff
+border-width = 1
 
 #Behaviour
 drun-launch = true
