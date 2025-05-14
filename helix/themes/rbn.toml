@@ -1,13 +1,18 @@
-# Author: Paul Graydon <untimely.creation97@proton.me>
 inherits = "tokyonight"
-
-
+# Author: Paul Graydon <untimely.creation97@proton.me>
 
 # rbns tweaks
-"ui.cursor.primary.normal" = { bg = "red" }  
-"ui.cursor.primary.insert" = { bg = "red" }  
-"ui.cursor.primary.select" = { bg = "red" }  
+"ui.cursor.primary.normal" = { bg = "white", fg="black"}
+"ui.cursor.primary.insert" = { bg = "white", fg="black"}
+"ui.cursor.primary.select" = { bg = "white", fg="black"}
 "ui.linenr.selected" = { fg = "red" }
+"ui.statusline.normal" = { bg = "soft-red", fg = "bg", modifiers = ["bold"] }
+"ui.statusline.insert" = { bg = "light-green", fg = "bg", modifiers = ["bold"] }
+"ui.statusline.select" = { bg = "light-blue", fg = "bg", modifiers = ["bold"] }
+
 
 [palette]
-red = "#c7768e"
+soft-red = "#b95868"
+red = "#f7768e"
+white = "#ffffff"
+black = "#000000"
