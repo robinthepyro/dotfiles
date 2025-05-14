@@ -30,11 +30,20 @@ alias sd="sudo docker"
 alias g="gitu"
 alias gt="gitui"
 
+# zathura pdf viewer
+alias za="zathura --fork"
+
 alias zj="zellij"
 
 alias mk="musikcube"
 # helix as hx
 alias hx="helix"
+
+# fastfetch as ff
+alias ff="fastfetch"
+
+# yazi as yz
+alias yz="yazi"
 
 # python 3.12 as py312
 alias py312="python3.12"
@@ -42,12 +51,6 @@ alias py312="python3.12"
 # activate to turn on venv
 # this one is just silly tbh but I kept forgetting how to do it
 alias activate="source .venv/bin/activate"
-
-# fastfetch as ff
-alias ff="fastfetch"
-
-# yazi as yz
-alias yz="yazi"
 
 # calcurse as clc
 alias clc="calcurse"
