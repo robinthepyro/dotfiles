@@ -1,8 +1,11 @@
 theme="rbn"
 
 [editor]
-text-width = 96  # retro vibes.
-# end-of-line-diagnostics = "hint"
+cursor-shape.normal = "underline"
+cursor-shape.insert = "bar"
+cursor-shape.select = "underline"
+text-width = 80  
+rulers = [81]
 mouse=true
 scrolloff = 16
 line-number = "relative"
@@ -42,9 +45,12 @@ cursor-line = "warning" # show warnings and errors on the cursorline inline
 enable = true
 supercede-menu = true
 
+
 [keys.normal.space]
-# u = ":sh ~/.scripts/upload_to_webdev.sh"
+c = ":sh ./build.sh"
+
 [keys.normal]
+Y = ":yank-join"
 C-r = ":format"
 C-m = "save_selection"
 S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
@@ -74,6 +80,9 @@ J = "goto_next_paragraph"
 K = "goto_prev_paragraph"
 H = ["insert_at_line_start", "normal_mode"] #avoids the annoying goto_line_start ignoring indent
 L = "goto_line_end"
+"A-9" = "rotate_selection_contents_forward"
+"A-0" = "rotate_selection_contents_backward"
+
 
 [keys.select]
 H = "goto_line_start" 
@@ -82,6 +91,7 @@ K = "goto_prev_paragraph"
 L = "goto_line_end"
 c = "change_selection"
 A-c = "change_selection_noyank"
+Y = ":yank-join"
 
 "A-x" = "extend_to_line_bounds"
 "X" = ["extend_line_up", "extend_to_line_bounds"]

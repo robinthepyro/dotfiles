@@ -20,6 +20,8 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "java"
+text-width = 100  
+rulers =[101]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
@@ -36,11 +38,15 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 
 [[language]]
 name = "javascript"
+text-width = 100  
+rulers =[101]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "typescript"
+text-width = 100  
+rulers =[101]
 auto-format = true
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
