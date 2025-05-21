@@ -26,6 +26,8 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
+text-width = 100  
+rulers =[101]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 
 [[language]]
