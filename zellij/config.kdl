@@ -1,3 +1,5 @@
+theme "tokyo-night-dark"
+
 keybinds clear-defaults=true {
     unbind "alt ("
     unbind "alt )"
@@ -219,5 +221,5 @@ plugins {
 
 theme "tokyo-dark"
 default_mode "normal"
-pane_frames true
+pane_frames false
 show_startup_tips false

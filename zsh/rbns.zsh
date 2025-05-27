@@ -62,12 +62,15 @@ export CALCURSE_EDITOR=helix
 export TERMINAL=kitty
 export TERM=kitty
 export ZIDE_DIR=$HOME/.config/zide
+export COLORTERM=truecolor
 
 
 
 
 # Script PATH
 export PATH="$HOME/.scripts:$PATH"
+
+export ZIDE_ALWAYS_NAME="true"
 
 # cargo bins
 export PATH="$HOME/.cargo/bin:$PATH"
