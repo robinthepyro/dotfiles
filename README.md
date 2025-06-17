@@ -5,9 +5,7 @@ It's a somewhat unique Hyprland setup with emphasis
 on being minimal but having things that bring me joy.
 
 Currently I use this on Arch Linux, I don't know what the
-availability of the packages this depends on is like,
-but apart from waybar-cava, which can be substituted for 
-waybar you should be alright on most distros.
+availability of the packages is like on other distros.
 
 
 ### Important Packages
@@ -21,12 +19,12 @@ Window Manager and Related Utilities
 ```hyprland hyprpaper hyprlock hyprswitch hypridle```
 
 Terminal
-```rio```
+```kitty```
 
 Text Editors 
 ```helix```
 
-Git UI's
+Git Tools
 ```gitu gitui```
 
 App Launcher
@@ -56,9 +54,6 @@ Battery Monitor
 Terminal Navigation Help (it's cd but better)
 ```zoxide```
  
-I know future me will appreciate it here's the command to install them all with paru.
-```paru -S hyprland hyprpaper hyprlock hyprswitch hypridle tofi waybar-cava yazi thunar keyd dunst rio zellij batsignal gitu gitui helix zoxide```
-
 
 # USE THESE AT YOUR OWN RISK!
 These configs work, on my machines. I haven't tried
