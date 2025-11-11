@@ -6,11 +6,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces",
-                     // "sway/scratchpad",
-                     // "sway/workspaces",
-                     // "river/tags",
-                    "mpris",
-                    "cava",
+                    // "cava",
+                    "mpris"
     ],
     "modules-center": ["clock"],
     "modules-right": [
@@ -47,8 +44,7 @@
         }
     },
     "cava": {
-        "framerate": 60,
-        // "sensitivity": 70,
+        "framerate": 30,
         "autosens": 1,
         "bars": 16,
         "lower_cutoff_freq": 40,

@@ -6,7 +6,6 @@
 set selection-clipboard clipboard
 
 set scroll-step 40
-set smooth-scroll  "true"
 
 set font "HackNerdFontMono 12"
 

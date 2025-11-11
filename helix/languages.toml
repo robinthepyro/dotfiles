@@ -1,5 +1,21 @@
 [[language]]
+name = "text"
+scope = "text"
+file-types = ["txt", "log"]
+indent = { tab-width = 4, unit = "    " }
+text-width = 0  
+rulers = [1000]
+
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = "    " }
+text-width = 120  
+rulers =[121]
+
+[[language]]
 name = "python"
+text-width = 100  
+rulers=[101]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
@@ -11,6 +27,8 @@ name = "rust"
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+text-width = 100  
+rulers =[101]
 name = "typescript"
 indent = { tab-width = 4, unit = "    " }
 
@@ -26,8 +44,6 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
-text-width = 100  
-rulers =[101]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 
 [[language]]
@@ -54,11 +70,15 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
 [[language]]
 name = "tsx"
+text-width = 100  
+rulers =[101]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
+text-width = 100  
+rulers =[101]
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 

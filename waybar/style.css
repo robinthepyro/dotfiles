@@ -6,6 +6,7 @@
 @define-color workspace_urgent_bg #881111;
 /* accent colour */
 @define-color accent-color #F1840A;
+
 * {
   transition: none;
   box-shadow: none;
@@ -36,6 +37,7 @@
   margin: 0px 0px;
   padding: 4px 8px;
 }
+
 #workspaces button.active {
   border-radius: 1px;
   border-bottom: 1px solid #ffffff;
@@ -99,6 +101,7 @@
   padding: 0 0px;
   margin-left: 20px;
 }
+
 #cava {
   margin-right: 20px;
   padding-bottom: 8px;

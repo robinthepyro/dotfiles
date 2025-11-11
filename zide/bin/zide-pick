@@ -38,7 +38,7 @@ show_help() {
 # Program to use as a picker
 picker=""
 # Command to perform on the paths, available commands will be based on your editor
-command="helix_open"
+command=""
 
 # Parse command-line options
 while [[ $# -gt 0 ]]; do

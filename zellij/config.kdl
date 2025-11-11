@@ -135,6 +135,10 @@ keybinds clear-defaults=true {
         bind "Alt 5" { GoToTab 5; SwitchToMode "normal"; }
         bind "Alt 6" { GoToTab 6; SwitchToMode "normal"; }
         bind "Alt 7" { GoToTab 7; SwitchToMode "normal"; }
+        bind "Ctrl h" { MoveFocus "left"; }
+        bind "Ctrl j" { MoveFocus "down"; }
+        bind "Ctrl k" { MoveFocus "up"; }
+        bind "Ctrl l" { MoveFocus "right"; }
 
     }
     shared_except "locked" "move" {
@@ -144,10 +148,6 @@ keybinds clear-defaults=true {
         bind "Ctrl s" { SwitchToMode "session"; }
     }
     shared_except "locked" "scroll" {
-        bind "Ctrl h" { MoveFocus "left"; }
-        bind "Ctrl j" { MoveFocus "down"; }
-        bind "Ctrl k" { MoveFocus "up"; }
-        bind "Ctrl l" { MoveFocus "right"; }
     }
     shared_except "locked" "scroll" "search" {
         bind "Ctrl /" { SwitchToMode "scroll"; }

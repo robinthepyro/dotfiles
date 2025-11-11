@@ -1,6 +1,5 @@
 # robins zsh conf
 
-
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/robin/.zshrc'
 
@@ -13,7 +12,7 @@ HISTSIZE=1999
 SAVEHIST=1999
 setopt autocd extendedglob nomatch
 unsetopt beep notify
-bindkey -v
+bindkey -e
 
 bindkey "^N" clear-screen
 bindkey -r "^L"
@@ -43,7 +42,7 @@ alias hx="helix"
 alias ff="fastfetch"
 
 # yazi as yz
-alias yz="yazi"
+alias y="yazi"
 
 # python 3.12 as py312
 alias py312="python3.12"
@@ -62,15 +61,13 @@ export CALCURSE_EDITOR=helix
 export TERMINAL=kitty
 export TERM=kitty
 export ZIDE_DIR=$HOME/.config/zide
-export COLORTERM=truecolor
 
+export RUSTICL_ENABLE="radeonsi"
 
 
 
 # Script PATH
 export PATH="$HOME/.scripts:$PATH"
-
-export ZIDE_ALWAYS_NAME="true"
 
 # cargo bins
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -80,9 +77,21 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export PATH="$HOME/.config/zide/bin:$PATH"
 
+
+
 # prompt
 PS1=" %1~ ❯ "
 RPROMPT="%F{241}%B%t%b%f"
+
+
+function yz() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"

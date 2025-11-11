@@ -22,7 +22,7 @@ corner-radius = 2
 horizontal = true
 outline-width = 0
 padding-left = 15
-padding-top = 12
+padding-top = 8
 min-input-width = 200
 result-spacing = 30
 

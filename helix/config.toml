@@ -43,7 +43,6 @@ cursor-line = "warning" # show warnings and errors on the cursorline inline
 
 [editor.smart-tab]
 enable = true
-supercede-menu = true
 
 
 [keys.normal.space]
